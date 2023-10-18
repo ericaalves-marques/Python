@@ -6,7 +6,7 @@ def imprime_mensagem_abertura():
     print("*********************************")
 
 def carrega_palavra_secreta():
-    arquivo = open("palavras.txt", "r")
+    arquivo = open("palavras.txt", encoding="UTF-8")
     palavras = []
     for linha in arquivo:
         linha = linha.strip()
